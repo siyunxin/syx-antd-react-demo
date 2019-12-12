@@ -24,10 +24,11 @@
     justify-content: flex-end;
 }
 .navbar-collapse{
-    width: 3em;
+    width: 1em;
     font-size: 1em;
     float: right;
     display: none;
+    padding: 0 1rem;
 }
 .header-img{
     width: 2em;
@@ -64,11 +65,22 @@
 }
 
 .show{
-    display: block;
+    height: 200px;
+    transition: height .5s;
 }
 .hidden{
-    display: none;
+    height: 0px;
+    transition: height .5s;
 }
+.nav-menu::after{
+    content: '';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
 @media screen and (max-width:768px){
     .navbar-collapse{
         display: block;
@@ -78,10 +90,47 @@
         top: 50px;
         left: 0;
         width: 100%;
-        background: #e5e9f2;
+        background: #f8f8f8;
+        overflow: hidden;
     }
+
     .top-right-content{
         padding:  0 1em;
         float: none;
     }
+}
+@media screen and (min-width:768px){
+    .navbar-collapse{
+        display: none;
+    }
+    .top-right-content{
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 .6em;
+    }
+    .show{
+        height: 0;
+    }
+}
+
+.slide-enter{
+    height: 0px;
+}
+.slide-enter-active{
+    height: 200px;
+    transition: height .5s ease-in;
+}
+.slide-enter-done{
+    height: 200px;
+}
+.slide-exit{
+    height: 200px;
+}
+.slide-exit-active{
+    height: 0;
+    transition: height .5s ease-in;
+}
+.slide-exit-done{
+    height: 0;
 }

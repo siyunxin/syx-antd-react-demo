@@ -8,9 +8,11 @@
     "element-theme-default": "^1.4.13",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-hot-loader": "^4.5.3",
     "react-redux": "^6.0.0",
     "react-router-config": "^4.4.0-beta.6",
     "react-scripts": "2.1.2",
+    "react-transition-group": "^4.3.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
     "styled-components": "^4.4.1"

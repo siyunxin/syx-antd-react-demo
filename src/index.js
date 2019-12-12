@@ -5,6 +5,7 @@ import configureStore from './redux/Store/store'
 import {Provider} from 'react-redux'
 
 import './index.css';
+import './assets/react-blog-icon/iconfont.css'
 import { GlobalCss } from './reset'
 const store = configureStore()
 ReactDOM.render( 
