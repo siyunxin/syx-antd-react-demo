@@ -10,8 +10,7 @@ import { GlobalCss } from './reset'
 const store = configureStore()
 ReactDOM.render( 
         <Provider store={store}>
-                <GlobalCss/>
-                <Main/>
-                
+             <GlobalCss />
+             <Main/>    
         </Provider>,
         document.getElementById('root'));
