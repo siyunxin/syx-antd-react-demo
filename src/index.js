@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './Page/layout/index'
-import configureStore from './redux/Store/store'
+import store from './redux/'
 import {Provider} from 'react-redux'
 
 import './index.css';
 import './assets/react-blog-icon/iconfont.css'
 import { GlobalCss } from './reset'
-const store = configureStore()
+import RouterPage from './router'
 ReactDOM.render( 
         <Provider store={store}>
              <GlobalCss />
-             <Main/>    
+             <RouterPage/>   
         </Provider>,
         document.getElementById('root'));
