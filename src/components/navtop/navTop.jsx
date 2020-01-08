@@ -4,10 +4,6 @@ import 'element-theme-default'
 import './navTop.css'
 
 class NavTop extends Component {
-
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <header className="bg-purple-dark">

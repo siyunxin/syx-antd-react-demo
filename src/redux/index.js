@@ -1,5 +1,4 @@
 import { createStore } from 'redux'
-// import thunkMiddleware from 'redux-thunk';
 import reducer from './Reducer'
 
 

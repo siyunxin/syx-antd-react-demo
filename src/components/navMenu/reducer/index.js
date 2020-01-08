@@ -31,14 +31,13 @@ export default (state = defaultState, action) => {
         case 'show_nav':
             newState.navShow = !newState.navShow;
             return newState
-            break;
+
         case 'change_menu_url':
             newState.activeId = action.value;
             newState.navShow = !newState.navShow;
             return newState
-            break;
+
         default:
             return state
-            break;
     }
 };
