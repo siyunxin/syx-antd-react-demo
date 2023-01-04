@@ -11,7 +11,7 @@
     "react-hot-loader": "^4.5.3",
     "react-redux": "^6.0.1",
     "react-router-config": "^4.4.0-beta.6",
-    "react-scripts": "2.1.2",
+    "react-scripts": "5.0.1",
     "react-transition-group": "^4.3.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
